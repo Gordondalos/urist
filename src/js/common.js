@@ -1,5 +1,27 @@
 $(document).ready(function() {
 
+
+
+	//$('.carousel-indicators li').change(function() {
+	//	var mif = $(".carousel-indicators>li.active").attr('id');
+	//	console.log(mif);
+	//});
+
+
+	//$( ".carousel-indicators" )
+	//	.change(function () {
+    //
+	//		$( ".carousel-indicators li.active" ).each(function() {
+	//			var mif = $(".carousel-indicators>li").attr('id');
+	//			console.log(mif);
+	//		});
+	//	}).change();
+
+
+
+
+
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");
@@ -39,7 +61,7 @@ $(document).ready(function() {
 		}
 	} catch(err) {
 
-	};
+	}
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	

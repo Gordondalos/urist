@@ -46,11 +46,11 @@
             
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">О нас <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#">Цены</a></li>
-                            <li><a href="#">Условия</a></li>
-                            <li><a href="#">Этапы работы</a></li>
-                            <li><a href="#">Видео</a></li>
+                            <li id="about" class=" item active"><a href="#">О нас <span class="sr-only">(current)</span></a></li>
+                            <li id="prise" class="item"><a href="#">Цены</a></li>
+                            <li id="terms" class="item"><a href="#">Условия</a></li>
+                            <li id="step" class="item"><a href="#">Этапы работы</a></li>
+                            <li id="video" class="item"><a href="#">Видео</a></li>
             
                         </ul>
             
@@ -69,14 +69,14 @@
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="3" class=""></li>
-                        <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="0"  class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"  class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="2"  class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="3"  class=""></li>
+                        <li data-target="#myCarousel" data-slide-to="4"  class=""></li>
                     </ol>
                     <div class="carousel-inner" role="listbox">
-                       <div class="item active">
+                       <div class="item active" id="about">
                            <img class="first-slide" src="./img/slide1.png" alt="slider">
                        
                            <div class="container">
@@ -115,7 +115,7 @@
                                </div>
                            </div>
                        </div>
-                       <div class="item">
+                       <div class="item" id="prise">
                            <img class="first-slide" src="./img/slide2.png" alt="slider">
                        
                            <div class="container">
@@ -156,7 +156,7 @@
                                </div>
                            </div>
                        </div>
-                       <div class="item slide3">
+                       <div class="item slide3" id="terms">
                            <img class="first-slide" src="./img/slide3.png" alt="slider">
                        
                            <div class="container">
@@ -174,7 +174,7 @@
                                </div>
                            </div>
                        </div>
-                       <div class="item slide4">
+                       <div class="item slide4" id="step">
                            <img class="first-slide" src="./img/slide4.png" alt="slider">
                        
                            <div class="container">
@@ -237,7 +237,7 @@
                        
                            </div>
                        </div>
-                       <div class="item slide5">
+                       <div class="item slide5" id="video">
                            <img class="first-slide" src="./img/slide4.png" alt="slider">
                        
                            <div class="container">
@@ -318,7 +318,7 @@
 <script src="libs/animate/animate-css.js"></script>
 <script src="libs/plugins-scroll/plugins-scroll.js"></script>
 
-<script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="./libs/bootstrap/js/bootstrap.js"></script>
 
 <script src="js/common.js"></script>
 </body>

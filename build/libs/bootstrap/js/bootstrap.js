@@ -406,6 +406,21 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.prototype.slide = function (type, next) {
     var $active   = this.$element.find('.item.active')
+
+
+    //мой код
+    var idd = $active.attr('id');
+    if(idd != undefined){
+      $('li#'+idd).siblings().removeClass('active');
+
+      $('li#'+idd).addClass("active");
+
+      console.log(idd);
+    }
+
+    //мой код
+
+
     var $next     = next || this.getItemForDirection(type, $active)
     var isCycling = this.interval
     var direction = type == 'next' ? 'left' : 'right'
