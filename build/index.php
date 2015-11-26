@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]>
 <html class="ie ie6" lang="en"> <![endif]-->
@@ -94,9 +95,9 @@
                                    </div>
                                    <div class="col-lg-2 col-lg-offset-1">
                                        <form action="./mail.php" method="post">
-                                           <input type="text" placeholder="Ваше имя" required>
-                                           <input type="text" placeholder="Ваш Телефон" required>
-                                           <input type="text" placeholder="Вас e-mail" required>
+                                           <input type="text" name="name" placeholder="Ваше имя" required>
+                                           <input type="text" name="email" placeholder="Ваш Телефон" required>
+                                           <input type="text" name="phone" placeholder="Вас e-mail" required>
                                            <br>
                                            <br>
                                            <br>
@@ -273,14 +274,14 @@
             
             
                     </div>
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">-->
+                        <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+                        <!--<span class="sr-only">Previous</span>-->
+                    <!--</a>-->
+                    <!--<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">-->
+                        <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+                        <!--<span class="sr-only">Next</span>-->
+                    <!--</a>-->
                 </div>
             </div>
         </div>
