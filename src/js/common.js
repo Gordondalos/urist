@@ -1,22 +1,24 @@
 $(document).ready(function() {
 
 
+$('nav li').click(function(){
+	var idd = $(this).attr('id');
+	$('nav li').siblings().removeClass('active');
+	$('nav li#'+idd).addClass("active");
 
-	//$('.carousel-indicators li').change(function() {
-	//	var mif = $(".carousel-indicators>li.active").attr('id');
-	//	console.log(mif);
-	//});
+	//console.log(idd);
+	$('div#'+idd).siblings().removeClass('active');
+	$('div#'+idd).addClass('active');
 
 
-	//$( ".carousel-indicators" )
-	//	.change(function () {
-    //
-	//		$( ".carousel-indicators li.active" ).each(function() {
-	//			var mif = $(".carousel-indicators>li").attr('id');
-	//			console.log(mif);
-	//		});
-	//	}).change();
+	$('.carousel-indicators li').siblings().removeClass('active');
+	$("li[title="+idd+"]").addClass('active');
+	//console.log($('li[title="'+idd+']'));
 
+
+	//$('li#'+idd).addClass("active");
+
+});
 
 
 

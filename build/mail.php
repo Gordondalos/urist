@@ -1,5 +1,7 @@
 <?php
 
+var_dump($_POST);
+
 $frm_name  = "Youname";
 $recepient = "youmail@ya.ru";
 $sitename  = "Название Сайта";
