@@ -24,18 +24,18 @@
 	.carousel-caption
 		top: 20px
 		left: 30px
-		text-align: justify
+		text-align: left
 		color: black
 
 		h1
 			color: #0C0D5E
-			font-size: 4vw
+			font-size: 60px
 			text-align: left
 			text-transform: uppercase
 			margin-top: 0
 
 		p
-			font-size: 2vw
+			font-size: 25px
 			margin-top: 10%
 		form
 			background-color: rgba(0, 0, 0, 0.5)
@@ -55,6 +55,82 @@
 					background: -webkit-linear-gradient(top,  #050527 0%,#0c0c29 16%,#07239c 91%)
 					background: linear-gradient(to bottom,  #050527 0%,#0c0c29 16%,#07239c 91%)
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050527', endColorstr='#07239c',GradientType=0 )
+.item-wrap
+	margin: 60px 20px
+	h3
+		margin-top: 5px
+		margin-left: 70px
+		text-transform: uppercase
+		font-size: 25px
+.item-square
+	display: inline-block
+	position: relative
+	.square
+		display: block
+		width: 50px
+		height: 50px
+		background-color: red
+		transform: rotate(45deg)
+		position: absolute
+	span
+		position: absolute
+		color: white
+		text-shadow: none
+		width: 50px
+		padding-top: 16px
+		padding-left: 6px
+	&:after
+		display: table
+		content: ""
+		clear: both
+
+.slide3
+	.carousel-caption
+		//background-color: rgba(255, 255, 255, 0.7)
+
+		text-align: center
+		h2
+			color: #0C0D5E
+			font-weight: 600
+			font-size: 30px
+			text-transform: uppercase
+		h3,h4
+			font-weight: 600
+			text-transform: uppercase
+
+		p
+			margin-top: 1em
+			font-size: 18px
+			line-height: 1.2em
+		span
+			font-size: 16px
+
+
+.slide4
+	@extend .slide3
+	.carousel-caption
+		margin: 0 -30px
+		padding: 0
+	.item-wrap
+		&:after
+			display: table
+			content: ""
+			clear: both
+		margin: 20px 0
+		text-align: left
+		img
+			display: inline-block
+			padding-right: 15px
+			padding-bottom: 20px
+
+		p
+			font-size: 20px
+			display: inline
+
+
+
+
+
 
 
 
